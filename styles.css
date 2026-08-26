@@ -1,0 +1,89 @@
+:root{
+  --black:#0a0a0a;
+  --off:#f3f0e9;
+  --bone:#d8d0c1;
+  --charcoal:#303030;
+  --line:rgba(255,255,255,.16);
+  --darkline:rgba(10,10,10,.15);
+  --max:1280px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--off);color:var(--black);font-family:Inter,Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+.announcement{background:var(--black);color:white;text-align:center;padding:9px;font-size:10px;font-weight:800;letter-spacing:.22em}
+.site-header{height:78px;padding:0 4vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--darkline);position:sticky;top:0;background:rgba(243,240,233,.94);backdrop-filter:blur(12px);z-index:20}
+.wordmark,.footer-brand{font-family:"Archivo Black",sans-serif;letter-spacing:-.06em;font-size:24px}
+.nav{display:flex;gap:34px;font-size:12px;text-transform:uppercase;font-weight:800;letter-spacing:.12em}
+.nav a:hover,.contact-links a:hover{text-decoration:underline;text-underline-offset:5px}
+.nav-cta{background:var(--black);color:white;padding:12px 18px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.1em}
+.menu-btn{display:none;border:0;background:none;font-size:22px}
+.hero{min-height:calc(100vh - 112px);background:var(--black);color:white;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+.hero-copy{padding:9vw 7vw;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{font-size:10px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin:0 0 20px}
+.hero h1,.statement h2,.intro h2,.campaign h2,.story h2,.contact h2{font-family:"Archivo Black",sans-serif;line-height:.9;letter-spacing:-.065em;margin:0}
+.hero h1{font-size:clamp(64px,9vw,145px)}
+.hero h1 span{color:transparent;-webkit-text-stroke:1px white}
+.hero-text{max-width:500px;line-height:1.7;color:#bcbcbc;margin:32px 0}
+.hero-actions{display:flex;align-items:center;gap:25px;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 20px;text-transform:uppercase;font-size:10px;font-weight:800;letter-spacing:.13em;text-align:center;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-light{background:white;color:black}
+.btn-dark{background:black;color:white}
+.text-link{font-size:11px;text-transform:uppercase;font-weight:800;letter-spacing:.12em}
+.hero-art{position:relative;min-height:650px;background:linear-gradient(135deg,#1b1b1b,#050505);display:flex;align-items:center;justify-content:center}
+.crossed-fingers{font-size:230px;filter:grayscale(1);opacity:.75;transform:rotate(-15deg)}
+.hero-label{position:absolute;top:13%;left:10%;border:1px solid white;padding:14px 17px;font-family:"Archivo Black";font-size:13px;line-height:.9}
+.hero-caption{position:absolute;right:8%;bottom:8%;font-family:"Archivo Black";font-size:12px;line-height:1.05;text-align:right}
+.marquee{overflow:hidden;background:#fff;border-bottom:1px solid var(--darkline);border-top:1px solid var(--darkline);white-space:nowrap}
+.marquee div{font-family:"Archivo Black";font-size:22px;padding:14px 0;animation:move 18s linear infinite}
+@keyframes move{to{transform:translateX(-40%)}}
+.section{max-width:var(--max);margin:auto;padding:120px 5vw}
+.intro{display:grid;grid-template-columns:1fr 1.6fr;gap:50px}
+.intro h2{font-size:clamp(60px,8vw,120px)}
+.section-lead{font-size:20px;line-height:1.55;max-width:520px;align-self:end}
+.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:45px}
+.section-heading h2{font-family:"Archivo Black";font-size:60px;letter-spacing:-.06em;margin:0}
+.drop-note{font-size:10px;font-weight:800;letter-spacing:.18em}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.product-image{aspect-ratio:4/5;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.black-shirt{background:#111;color:white}
+.bone-shirt{background:#cfc7b7;color:#111}
+.charcoal-shirt{background:#3b3b3b;color:white}
+.shirt-placeholder{font-family:"Archivo Black";font-size:45px;line-height:.82;text-align:center;letter-spacing:-.08em;transform:rotate(-4deg)}
+.product-tag{position:absolute;top:16px;left:16px;border:1px solid currentColor;padding:6px 8px;font-size:9px;font-weight:800}
+.product-info{display:flex;justify-content:space-between;gap:15px;padding:18px 0}
+.product-info h3{font-size:14px;margin:0 0 6px}
+.product-info p{font-size:11px;color:#777;margin:0}
+.product-info strong{font-size:13px}
+.full{width:100%}
+.price-note{font-size:10px;color:#777;margin-top:15px}
+.campaign{max-width:none;background:var(--black);color:white;display:grid;grid-template-columns:1fr 1fr;padding:0}
+.campaign-image{min-height:650px;background:radial-gradient(circle at 50% 45%,#343434,#070707);display:flex;align-items:center;justify-content:center}
+.campaign-mark{font-family:"Archivo Black";font-size:clamp(50px,8vw,110px);line-height:.82;text-align:center;transform:rotate(-6deg)}
+.campaign-copy{padding:10vw 8vw;align-self:center}
+.campaign-copy h2{font-size:clamp(55px,7vw,100px);margin-bottom:30px}
+.campaign-copy p{max-width:520px;line-height:1.7;color:#bbb}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:100px}
+.story h2{font-size:clamp(55px,7vw,100px)}
+.story-copy{font-size:18px;line-height:1.7;align-self:center}
+.signature{font-family:"Archivo Black";font-size:25px;margin-top:40px}
+.statement{background:#111;color:white;text-align:center;padding:150px 5vw}
+.statement p{font-size:10px;font-weight:800;letter-spacing:.25em;margin-bottom:25px}
+.statement h2{font-size:clamp(65px,11vw,150px)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:80px}
+.contact h2{font-size:clamp(55px,7vw,100px)}
+.contact-links{display:flex;flex-direction:column}
+.contact-links a{font-family:"Archivo Black";font-size:clamp(25px,4vw,50px);padding:13px 0;border-bottom:1px solid var(--darkline);letter-spacing:-.04em}
+footer{background:var(--black);color:white;padding:30px 5vw;display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:9px;font-weight:800;letter-spacing:.14em}
+@media(max-width:800px){
+  .nav,.nav-cta{display:none}.menu-btn{display:block}
+  .site-header.menu-open .nav{display:flex;position:absolute;top:78px;left:0;right:0;background:var(--off);padding:25px;flex-direction:column;gap:20px;border-bottom:1px solid var(--darkline)}
+  .hero{grid-template-columns:1fr}.hero-art{min-height:55vh}.hero-copy{padding:70px 7vw}
+  .intro,.story,.contact{grid-template-columns:1fr;gap:35px}
+  .product-grid{grid-template-columns:1fr}.section{padding:80px 6vw}
+  .section-heading{align-items:start;gap:20px;flex-direction:column}.section-heading h2{font-size:52px}
+  .campaign{grid-template-columns:1fr}.campaign-image{min-height:420px}.campaign-copy{padding:75px 7vw}
+  .statement{padding:100px 6vw}
+  footer{flex-direction:column;align-items:flex-start}
+}
