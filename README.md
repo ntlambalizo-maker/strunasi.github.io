@@ -4,7 +4,7 @@ Ready-to-upload static website for GitHub Pages.
 
 ## Files
 - index.html — home / hero / categories / Promise Mark / best sellers
-- shop.html — product grid with Tees / Hoodies / Caps filters
+- shop.html — product grid with Tees / Hoodies
 - story.html — brand story
 - campaign.html — Campaign 001
 - contact.html — WhatsApp / Instagram / Facebook / email
